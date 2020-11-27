@@ -1,0 +1,55 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.2em;
+}
+
+body {
+  align-items: center;
+  background: #343434;
+  color: #fefefe;
+  display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+  justify-content: center;
+  line-height: 140%;
+  min-height: 100vh;
+}
+
+main {
+  font-size: 2rem;
+}
+
+div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p {
+    margin: 0 0 40px 0;
+    line-height: 40px;
+}
+
+input {
+    margin: 10px;
+    width: 50%;
+    height: 30px;
+}
+
+div > button {
+    margin-top: 20px;
+    padding: 25px 100px 25px 100px;
+}
+
+.nav-button {
+    margin: 0 20px 0 20px;
+}
+
+#buttonDiv {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
