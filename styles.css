@@ -4,7 +4,12 @@
 
 @font-face {
     font-family: 'PTSans';
-    src: url('typeface/PTSans-Regular.ttf');
+    src: url('typeface/PTSans/PTSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('typeface/Exo/Exo-VariableFont_wght.ttf');
 }
 
 body {
@@ -36,8 +41,16 @@ body {
     text-decoration: none;
 }
 
+#homeTitle > h1 {
+    padding: 1.2rem 0 0.5rem 0;
+    font-family: 'Exo';
+    font-size: 2.3em;
+}
+
 #homeText > p {
     width: 35vw;
+    padding: 1.25rem 0 0 0;
+    line-height: 1.5;
     min-width: 300px;
     max-width: 900px;
     text-align: left;
@@ -62,4 +75,14 @@ body {
     min-width: 300px;
     max-width: 900px;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    
+        .header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 5vh;
+    }
 }
