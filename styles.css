@@ -7,6 +7,12 @@
     height: 5vh;
 }
 
+.alignText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header > nav {
     padding: 0.5em 0 0 0.5em;
     width: 12vw;
@@ -18,4 +24,32 @@
 
 .header > nav > a {
     text-decoration: none;
+}
+
+#homeText > p {
+    width: 35vw;
+    min-width: 300px;
+    max-width: 900px;
+    text-align: left;
+}
+
+#experience > p {
+    width: 35vw;
+    min-width: 300px;
+    max-width: 900px;
+    text-align: left;
+}
+
+#summary > p {
+    width: 35vw;
+    min-width: 300px;
+    max-width: 900px;
+    text-align: left;
+}
+
+#contact > p {
+    width: 25vw;
+    min-width: 300px;
+    max-width: 900px;
+    text-align: center;
 }

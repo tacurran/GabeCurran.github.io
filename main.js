@@ -1,5 +1,12 @@
 const buttonDiv = document.querySelector("#buttonDiv");
 const projectDiv = document.querySelector("#projectDiv");
+const projectDescription = document.querySelector("#projectDescription");
+
+const tictactoeTitle = "Tic Tac Toe"
+const tictactoeDecsription = "A tic-tac-toe game that my partner, Troy Alfelt, and I made for a school project."
+
+const domadventuregameTitle = "DOM Adventure Game"
+const domadventuregameDescription = "A text adventure game I made for a school project, using DOM methods and event listeners to rebuild the page."
 
 let projectNum = 0;
 
@@ -7,10 +14,14 @@ const switchProject = function() {
     if (projectNum == 0) {
         projectDiv.innerHTML = '';
         projectDiv.appendChild(domadventuregameFrame);
+        projectTitle.textContent = domadventuregameTitle;
+        projectDescription.textContent = domadventuregameDescription;
         projectNum = 1;
     } else {
         projectDiv.innerHTML = '';
         projectDiv.appendChild(tictactoeFrame);
+        projectTitle.textContent = tictactoeTitle;
+        projectDescription.textContent = tictactoeDecsription;
         projectNum = 0;
     }
 };
