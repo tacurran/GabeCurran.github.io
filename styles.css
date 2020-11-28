@@ -1,4 +1,14 @@
-*, *:before, *:after {box-sizing: border-box; padding: 0; margin: 0;}
+*, *:before, *:after {
+    box-sizing: border-box; padding: 0; margin: 0;
+    font-family: 'PTSans';}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('typeface/PTSans-Regular.ttf');
+}
+
+body {
+}
 
 .header {
     display: flex;

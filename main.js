@@ -5,7 +5,7 @@ const projectDescription = document.querySelector("#projectDescription");
 const tictactoeTitle = "Tic Tac Toe"
 const tictactoeDecsription = "A tic-tac-toe game that my partner, Troy Alfelt, and I made for a school project."
 
-const domadventuregameTitle = "DOM Adventure Game"
+const domadventuregameTitle = "DOM Adventure Game (Was Not Designed for Mobile)"
 const domadventuregameDescription = "A text adventure game I made for a school project, using DOM methods and event listeners to rebuild the page."
 
 let projectNum = 0;
