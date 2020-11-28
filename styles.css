@@ -1,1 +1,21 @@
 *, *:before, *:after {box-sizing: border-box; padding: 0; margin: 0;}
+
+.header {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 5vh;
+}
+
+.header > nav {
+    padding: 0.5em 0 0 0.5em;
+    width: 12vw;
+    min-width: 250px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25em;
+}
+
+.header > nav > a {
+    text-decoration: none;
+}
