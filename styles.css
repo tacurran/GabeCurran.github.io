@@ -13,6 +13,16 @@
 }
 
 body {
+    background-color: #312222;
+}
+
+p {
+    color: #eeeeee;
+    font-size: 1.2em;
+}
+
+h2 {
+    color: #91232c;
 }
 
 .header {
@@ -39,9 +49,12 @@ body {
 
 .header > nav > a {
     text-decoration: none;
+    color: #91232c;
+    font-weight: 600;
 }
 
 #homeTitle > h1 {
+    color: #ff3849;
     padding: 1.2rem 0 0.5rem 0;
     font-family: 'Exo';
     font-size: 2.3em;
