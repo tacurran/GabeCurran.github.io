@@ -56,6 +56,16 @@ h2 {
     border-bottom: solid 2px #91232c;
 }
 
+#projectTitle {
+    padding-top: 0.5em;
+    text-align: center;
+    width: 40vw;
+}
+
+#projectDescription {
+    width: 40vw;
+}
+
 #refContainer {
     display: flex;
     align-items: center;
@@ -168,5 +178,14 @@ h2 {
             width: 70%;
             min-width: 380px;
             border-bottom: solid 2px #91232c;
+        }
+
+        #projectTitle {
+            text-align: center;
+            width: 80vw;
+        }
+    
+        #projectDescription {
+            width: 80vw;
         }
 }
