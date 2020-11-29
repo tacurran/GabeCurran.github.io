@@ -63,6 +63,7 @@ h2 {
 }
 
 #projectDescription {
+    text-align: center;
     width: 40vw;
 }
 
@@ -186,6 +187,7 @@ h2 {
         }
     
         #projectDescription {
+            text-align: center;
             width: 80vw;
         }
 }
