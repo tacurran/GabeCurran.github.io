@@ -1,7 +1,0 @@
-Title: Gabe Curran, Studying Software Engineering at Thaddeus Stevens College of Technology
-
-Introduction:
-I'm a student with a passion for computers, web design and video games. I'm always looking for ways to learn more and better myself.
-
-Goals:
-My current goal is to graduate from Thaddeus Stevens and look for a job or internship in software development while I'm doing it. In the distant future, I hope to pursue a career in data science as well.

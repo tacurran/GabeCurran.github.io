@@ -1,9 +1,0 @@
-Experience:
-Currently, the experience I'm gaining now revolves around web-design and developing strategies/tools.
-Most of my prior work has been small jobs for friends/family or fixing computers/software issues. I've also built half a dozen or so computers for various people. I also have hosted many public/private video game servers in the past.
-
-Projects:
-Dom Adventure Game:
-A text adventure game I made for a school project, using DOM methods and event listeners to rebuild the page.
-Tic Tac Toe:
-A tic-tac-toe game that my partner, Troy Alfelt, and I made for a school project.
