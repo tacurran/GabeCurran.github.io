@@ -26,6 +26,12 @@ p {
     font-size: 1.2em;
 }
 
+a {
+    text-decoration: none;
+    color: #91232c;
+    font-weight: 600;
+}
+
 h2 {
     color: #91232c;
 }
@@ -47,7 +53,16 @@ h2 {
     padding: 0 0 1.25em 0;
     width: 40%;
     min-width: 500px;
-    border-bottom: solid 1px #91232c;
+    border-bottom: solid 2px #91232c;
+}
+
+#refContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    min-width: 350px;
+    border-bottom: solid 2px #91232c;
 }
 
 .header > nav {
@@ -57,12 +72,6 @@ h2 {
     display: flex;
     justify-content: space-between;
     font-size: 1.25em;
-}
-
-.header > nav > a {
-    text-decoration: none;
-    color: #91232c;
-    font-weight: 600;
 }
 
 #homeTitle > h1 {
@@ -124,6 +133,19 @@ h2 {
     min-width: 300px;
     max-width: 900px;
     text-align: center;
+}
+
+#refContainer > nav {
+    padding: 2em 0 0.5em 0;
+    font-size: 1.2em;
+}
+
+#refContainer > nav > a {
+    padding: 0 15px 0 15px;
+}
+
+#refContainer > nav > a:hover {
+    color: #66181f;
 }
 
 @media only screen and (max-width: 700px) {
