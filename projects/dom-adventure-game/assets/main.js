@@ -297,7 +297,7 @@ const numGuess = function() {
         };
     
   //Create a random number
-  let realNum = Math.round(Math.random() * 2);
+  let realNum = Math.ceil(Math.random() * 2);
     
     // Checking to see if they have the right answer and acting accordingly
     const checkContent = function() {
