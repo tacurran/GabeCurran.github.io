@@ -1,0 +1,353 @@
+*, *:before, *:after {
+    box-sizing: border-box; padding: 0; margin: 0;
+}
+
+@font-face {
+    font-family: 'PTSans';
+    src: url('typeface/PTSans/PTSans-Regular.ttf');
+}
+
+body {
+    height: 0;
+    background: #242424;
+}
+
+main {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	visibility: hidden; /* We don't want the game to show up before the game actually starts */
+}
+
+#startDisplay {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+    height: 100vh;
+    justify-content: center;
+	align-items: center;
+}
+
+button {
+	height: 50px;
+	padding: 10px;
+}
+
+.teams {
+	display: flex;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: #226e21;
+}
+
+meter::-webkit-meter-suboptimum-value {
+  background: gold;
+}
+
+meter::-webkit-meter-even-less-good-value {
+  background: crimson;
+}
+
+.teamChar {
+	display: flex;
+	border: 1px solid grey;
+	padding: 10px;
+	margin: 5px;
+    background: white;
+}
+
+#chooseTeam2Button {
+	visibility: hidden;
+}
+
+#displayCharacters {
+    display: flex;
+    flex-direction: column;
+	height: 540px;
+    padding: 10px;
+    background-color: #171717;
+    border: solid 3px gray;
+	justify-content: space-around;
+}
+
+button {
+    margin: 5px;
+}
+
+table {
+    font-size: 2em;
+    font-family: 'PTSans';
+}
+
+th {
+    color: lightgray;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 10px;
+    border-bottom: 4px solid lightgray;
+}
+
+td {
+    padding: 15px 20px 10px 20px;
+    color: lightgray;
+    text-align: center;
+    border-bottom: 3px solid lightgray;
+}
+
+.fire {
+	color: #FF4918;
+}
+
+.water {
+	color: #00D1C7;
+}
+
+.grass {
+	color: #00AC00;
+}
+    
+.chooseTeams {
+    font-size: 1.4em;
+    width: 20vw;
+    min-width: 200px;
+}
+
+#gameScreen {
+    margin-top: 7vh;
+	display: flex;
+	flex-direction: column;
+	border: 4px solid grey;
+	width: 80%;
+	height: 50%;
+}
+
+#playingField {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 1px solid grey;
+	width: 100%;
+	height: 70%;
+}
+
+.current {
+    margin: 30px 0 10px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.descStuff {
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	width: 200px;
+	justify-content: space-between;
+	margin-top: 20px;
+    color: darkgray;
+}
+
+.currentPlayer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	height: 70px;
+	width: 70px;
+	background-color: grey;
+}
+
+.teamHeader {
+    font-size: 1.3em;
+    height: 30px;
+}
+
+.healthSlashes {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	width: 100px;
+	margin: 10px;
+}
+
+.currentHealthDisplay {
+	font-size: 1.5em;
+	font-family: Verdana;
+	color: #008022;
+}
+
+.maxHealthDisplay {
+	font-size: 1.1em;
+	font-family: Verdana;
+	color: #008022;
+}
+
+#winnerDisplay {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+#rosterContainer {
+    margin-top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#resetGame {
+	visibility: hidden;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 700px) {
+
+    #gameScreen {
+        margin-top: 2em;
+        height: 400px;
+    }
+
+    .teams {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #startDisplay {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: 100vh;
+        justify-content: flex-end;
+        align-content: center;
+    }
+    
+    #displayCharacters {
+        height: 375px;
+    }
+    
+    table {
+        font-size: 1em;
+    }
+    
+    .chooseTeams {
+        font-size: 1.2em;
+        width: 40vw;
+    }
+
+    #rosterContainer {
+        margin-top: 0;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .descStuff {
+        width: 80vw;
+    }
+    
+    #winnerDisplay {
+        text-align: center;
+    }
+
+    .descStuff > div {
+        margin: 5px 0 5px 0;
+    }
+
+}
+
+
+@media only screen and (max-width: 430px) {
+    
+    #displayCharacters {
+        height: 275px;
+    }
+    
+    table {
+        font-size: 0.8em;
+    }
+    
+    th {
+        border-bottom: 3px solid lightgray;
+    }
+    
+    td {
+        padding: 5px;
+        border-bottom: 2px solid lightgray;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+
+    #gameScreen {
+        margin-top: 2em;
+        height: 300px;
+    }
+
+    .teams {
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #startDisplay {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: 100vh;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .chooseTeams {
+        font-size: 1.2em;
+        width: 40vw;
+    }
+
+    #rosterContainer {
+        display: flex;
+        align-content: center;
+        margin-top: 0;
+        width: 100%;
+        height: 90px;
+    }
+
+    .descStuff {
+        width: 400px;
+    }
+    
+    #winnerDisplay {
+        text-align: center;
+    }
+
+    .descStuff > div {
+        margin: 5px 0 5px 0;
+    }
+    
+    #startDisplay {
+        height: 400px;
+    }
+    
+    #displayCharacters {
+        margin-top: 10vh;
+        height: 275px;
+    }
+    
+    table {
+        font-size: 0.75em;
+    }
+    
+    th {
+        border-bottom: 3px solid lightgray;
+    }
+    
+    td {
+        padding: 5px;
+        border-bottom: 2px solid lightgray;
+    }
+    
+}

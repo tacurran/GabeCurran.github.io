@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <title>Turn Based Game</title>
+
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+
+    <body>
+
+		<div id="startDisplay">
+
+            <table id='displayCharacters'>
+
+                <tr>
+                    <th>Number</th>
+                    <th>Name</th>
+                    <th>HP</th>
+                    <th>Attack</th>
+                    <th>Type</th>
+                </tr>
+
+                <tr>
+                    <td>#1</td>
+                    <td>Ekbrilo</td>
+                    <td>200</td>
+                    <td>25</td>
+                    <td class='fire'>Fire</td>
+                </tr>
+
+                <tr>
+                    <td>#2</td>
+                    <td>Akvo</td>
+                    <td>200</td>
+                    <td>25</td>
+                    <td class='water'>Water</td>
+                </tr>
+
+                <tr>
+                    <td>#3</td>
+                    <td>The Grass Man</td>
+                    <td>200</td>
+                    <td>25</td>
+                    <td class='grass'>Grass</td>
+                </tr>
+
+                <tr>
+                    <td>#4</td>
+                    <td>Kabo</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td class='fire'>Fire</td>
+                </tr>
+
+                <tr>
+                    <td>#5</td>
+                    <td>Calysto</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td class='water'>Water</td>
+                </tr>
+
+                <tr>
+                    <td>#6</td>
+                    <td>Phrog</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td class='grass'>Grass</td>
+                </tr>
+
+            </table>
+
+			<button id='chooseTeam1Button' class="chooseTeams">Choose Team 1</button>
+			<button id='chooseTeam2Button' class="chooseTeams">Choose Team 2</button>
+		</div>
+
+        <main id='gameContainer'>
+
+			<!-- the visuals for the game start here -->
+			<div id="gameScreen">
+
+				<div id="playingField"> <!-- where the action happens -->
+					<div class="current" id="current1">
+                        <p class='teamHeader' id='team1Header'>Team 1</p>
+
+						<div id="currentPlayer1" class="currentPlayer">
+                            current 1
+						</div>
+
+						<div class="healthSlashes">
+							<div id="current1health" class="currentHealthDisplay"></div>
+							<div id="current1maxHealth" class="maxHealthDisplay"></div>
+						</div>
+
+						<meter id="current1HPbar" max="100" value="100"></meter>
+
+					</div>
+
+					<div class="current" id="current2">
+                        <p class='teamHeader' id='team2Header'>Team 2</p>
+
+						<div id="currentPlayer2" class="currentPlayer">
+							current 2
+						</div>
+
+						<div class="healthSlashes">
+							<div id="current2health" class="currentHealthDisplay"></div>
+							<div id="current2maxHealth" class="maxHealthDisplay"></div>
+						</div>
+
+						<meter id="current2HPbar" max="100" value="100"></meter>
+
+					</div>
+				</div>
+
+				<div id="rosterContainer"> <!-- where the team members wait for their turns -->
+					<div id="team1" class="teams">
+						<div id="team1char1" class="teamChar">
+							1-1
+						</div>
+
+						<div id="team1char2" class="teamChar">
+							1-2
+						</div>
+
+						<div id="team1char3" class="teamChar">
+							1-3
+						</div>
+					</div>
+
+					<div id="team2" class="teams">
+						<div id="team2char1" class="teamChar">
+							2-1
+						</div>
+
+						<div id="team2char2" class="teamChar">
+							2-2
+						</div>
+
+						<div id="team2char3" class="teamChar">
+							2-3
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- the visuals for the game stop here -->
+
+			<div class="descStuff"> <!-- The "announcer" of the game -->
+				<div id="actionDisplay"></div> <!-- Here's what happened -->
+                <div id='critDisplay'></div> <!-- Tells if it's a critical hit -->
+				<div id="addOnDisplay"></div> <!-- resistance/weakness -->
+                <div id='sentOut'></div> <!-- Newest player on the field -->
+				<div id="winnerDisplay"></div> <!-- winning team -->
+			</div>
+
+            <button id='attackGuy'>Attack Guy</button>
+
+            <button id="resetGame">RESET</button>
+
+        </main>
+
+        <script src="main.js"></script>
+
+    </body>
+
+</html>
