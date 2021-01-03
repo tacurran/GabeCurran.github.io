@@ -57,6 +57,7 @@ meter::-webkit-meter-even-less-good-value {
 	padding: 10px;
 	margin: 5px;
     background: white;
+    text-align: center;
 }
 
 #chooseTeam2Button {
