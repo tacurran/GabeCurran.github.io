@@ -9,7 +9,7 @@ const projectArray = [
     {
         name: "Tic Tac Toe",
         title: "Tic Tac Toe",
-        description: "A tic-tac-toe game that my partner, Troy Alfelt, and I made for a school project."
+        description: "A tic-tac-toe game that Troy Alfelt and I made for a school project."
     },
     {
         name: "Adventure Game",
@@ -19,7 +19,7 @@ const projectArray = [
     {
         name: "Turn Based Game",
         title: "A Primitive Turn Based Game",
-        description: "I made this game with a partner, Aliza Howe, for a school project."
+        description: "I made this two player game with Aliza Howe for a school project."
     }
 ];
 
